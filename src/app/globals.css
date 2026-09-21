@@ -1,0 +1,112 @@
+@import "tailwindcss";
+
+:root {
+  /* Basis: gietbeton, warm en dof i.p.v. koud wit */
+  --page:              #F2F0EC;
+  --surface:           #E9E6E0;
+  --surface-2:         #DEDAD2;
+  --border:            #CFC9BE;
+  --border-strong:     #B7AF9F;
+
+  /* Inkt op licht */
+  --ink:               #17161A;
+  --ink-secondary:     #4A484E;
+  --ink-muted:         #767389;
+
+  /* Merkaccent: OBI-rood */
+  --accent:            #D81E05;
+  --accent-dim:        #AD1804;
+  --accent-glow:       #F03A1C;
+  --accent-soft:       #FBE4DF;
+
+  /* Donkere sectie: lichter beton-grijs i.p.v. bijna-zwart */
+  --dark:              #34333A;
+  --dark-surface:      #3E3D44;
+  --dark-surface-2:    #48474E;
+  --dark-border:       #56555C;
+  --on-dark:           #F5F3EF;
+  --on-dark-secondary: #C7C4CC;
+  --on-dark-muted:     #97949C;
+
+  /* Donkerrode ondertoon: verwijst naar de rode architectonische elementen
+     van HIGHnote en het OBI-rood, i.p.v. nog een grijstint. */
+  --dark-maroon:       #2B1412;
+}
+
+@theme inline {
+  --color-page:              var(--page);
+  --color-surface:           var(--surface);
+  --color-surface-2:         var(--surface-2);
+  --color-border:            var(--border);
+  --color-border-strong:     var(--border-strong);
+
+  --color-ink:               var(--ink);
+  --color-ink-secondary:     var(--ink-secondary);
+  --color-ink-muted:         var(--ink-muted);
+
+  --color-accent:            var(--accent);
+  --color-accent-dim:        var(--accent-dim);
+  --color-accent-glow:       var(--accent-glow);
+  --color-accent-soft:       var(--accent-soft);
+
+  --color-dark:              var(--dark);
+  --color-dark-surface:      var(--dark-surface);
+  --color-dark-surface-2:    var(--dark-surface-2);
+  --color-dark-border:       var(--dark-border);
+  --color-on-dark:           var(--on-dark);
+  --color-on-dark-secondary: var(--on-dark-secondary);
+  --color-on-dark-muted:     var(--on-dark-muted);
+  --color-dark-maroon:       var(--dark-maroon);
+
+  --font-display: var(--font-archivo);
+  --font-body:    var(--font-inter);
+}
+
+html {
+  background: var(--dark);
+  color: var(--ink);
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-inter), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.font-display {
+  font-family: var(--font-archivo), system-ui, sans-serif;
+  letter-spacing: -0.01em;
+}
+
+@keyframes obiFloat {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+.obi-float {
+  animation: obiFloat 5s ease-in-out infinite;
+}
+@media (prefers-reduced-motion: reduce) {
+  .obi-float { animation: none; }
+}
+
+.accent-rule {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+.accent-rule::before {
+  content: '';
+  display: block;
+  width: 2.5rem;
+  height: 2px;
+  background: var(--accent);
+  flex-shrink: 0;
+}
+
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--border-strong); border-radius: 99px; }
+::-webkit-scrollbar-thumb:hover { background: var(--accent); }
+
+::selection { background: rgba(216, 30, 5, 0.22); color: var(--ink); }

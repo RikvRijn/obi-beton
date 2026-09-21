@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { PanelReveal } from "@/components/ui/PanelReveal";
 import { LightboxModal, useLightbox } from "@/components/ui/Lightbox";
 
@@ -76,6 +77,14 @@ export function ProductsPreview() {
             );
           })}
         </div>
+
+        <p className="mt-10 text-lg text-ink-secondary">
+          Staat uw element er niet tussen? OBI fabriceert ook maatwerk prefab beton.{" "}
+          <Link href="/offerte" className="font-semibold text-accent underline underline-offset-4 hover:text-accent-dim">
+            Vraag een offerte aan voor uw project
+          </Link>
+          .
+        </p>
       </PanelReveal>
 
       <LightboxModal item={active} onClose={close} />

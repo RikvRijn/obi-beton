@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { PageIntro } from "@/components/layout/PageIntro";
+import { CtaBanner } from "@/components/ui/CtaBanner";
 
 export const metadata: Metadata = {
   title: "Duurzaamheid | OBI",
@@ -76,7 +77,7 @@ export default function DuurzaamheidPage() {
                 className="absolute inset-y-0 border-l-2 border-dashed border-accent"
                 style={{ left: `${(CEILING.value / CO2_MAX) * 100}%` }}
               >
-                <span className="font-display absolute -top-7 -translate-x-1/2 whitespace-nowrap text-xs font-semibold uppercase tracking-wide text-accent">
+                <span className="font-display absolute -top-7 -translate-x-1/2 whitespace-nowrap text-xs font-semibold uppercase tracking-wide text-accent-glow">
                   Plafond {CEILING.value}
                 </span>
               </div>
@@ -105,6 +106,11 @@ export default function DuurzaamheidPage() {
             </p>
           </div>
         </section>
+
+        <CtaBanner
+          title="Duurzaam bouwen met prefab beton"
+          description="Benieuwd hoe CEM-III/A-beton past binnen uw project? Wij denken mee over duurzame en technisch verantwoorde oplossingen."
+        />
       </main>
       <Footer />
     </>

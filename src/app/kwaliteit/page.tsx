@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { PageIntro } from "@/components/layout/PageIntro";
+import { CtaBanner } from "@/components/ui/CtaBanner";
+import { Button } from "@/components/ui/Button";
 
 export const metadata: Metadata = {
   title: "Kwaliteit | OBI",
@@ -47,14 +49,18 @@ export default function KwaliteitPage() {
                 Bekijk ons officiële KOMO-certificaat als bewijs van onze
                 gecertificeerde kwaliteit.
               </p>
-              {/* TODO: link naar het echte KOMO-certificaat-PDF zodra Rik die aanlevert. */}
-              <span className="font-display mt-6 inline-flex cursor-not-allowed items-center gap-2 bg-border-strong px-6 py-3 text-sm font-semibold uppercase tracking-wide text-ink-muted">
-                Certificaat volgt
-              </span>
+              <Button href="/komo-certificaat.pdf" variant="primary" className="mt-6" target="_blank">
+                Certificaat bekijken
+              </Button>
               <p className="mt-4 text-xs text-ink-muted">Afgegeven door KIWA / KOMO</p>
             </div>
           </div>
         </section>
+
+        <CtaBanner
+          title="Gecertificeerde kwaliteit voor uw bouwproject"
+          description="Vraag vrijblijvend een offerte aan en ervaar zelf de KOMO-gecertificeerde kwaliteit van OBI prefab beton."
+        />
       </main>
       <Footer />
     </>

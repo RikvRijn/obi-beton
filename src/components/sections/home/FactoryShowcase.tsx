@@ -36,7 +36,7 @@ export function FactoryShowcase() {
       <PanelReveal className="mx-auto max-w-7xl">
         <div className="grid items-start gap-12 lg:grid-cols-[1.1fr_0.9fr]">
           <div>
-            <p className="accent-rule font-display text-xs font-semibold uppercase tracking-[0.2em] text-accent">
+            <p className="accent-rule font-display text-lg font-bold uppercase tracking-[0.15em] text-accent">
               Beton Wonderland
             </p>
             <h2 className="font-display mt-4 max-w-xl text-4xl font-black uppercase leading-tight text-on-dark sm:text-5xl">
@@ -52,7 +52,7 @@ export function FactoryShowcase() {
                 <Link
                   key={link.href}
                   href={link.href}
-                  className="group flex flex-col justify-between gap-6 border-l-4 border-accent bg-white/5 p-6 transition-colors duration-200 hover:bg-white/10"
+                  className="group flex flex-col justify-between gap-6 border-l-4 border-accent bg-white/5 p-6 transition-colors duration-200 hover:bg-white/10 focus:outline-none focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
                 >
                   <div>
                     <h3 className="font-display text-lg font-bold text-on-dark transition-colors group-hover:text-accent">

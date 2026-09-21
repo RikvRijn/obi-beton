@@ -15,6 +15,16 @@ const REFERENCES = [
     location: "Papendrecht",
     image: "/referentie-kraaijhoek-papendrecht.jpg",
   },
+  {
+    name: "Amstelkwartier",
+    location: "Amsterdam",
+    image: "/referentie-amstelkwartier-amsterdam-1.png",
+  },
+  {
+    name: "Amstelkwartier",
+    location: "Amsterdam",
+    image: "/referentie-amstelkwartier-amsterdam-2.png",
+  },
 ];
 
 export function ReferencesShowcase() {
@@ -33,7 +43,7 @@ export function ReferencesShowcase() {
         <div className="mt-14 flex gap-6 overflow-x-auto pb-4">
           {REFERENCES.map((project) => (
             <button
-              key={project.name}
+              key={project.image}
               type="button"
               onClick={() => open({ image: project.image, title: project.name, subtitle: project.location })}
               className="group relative flex h-[26rem] w-[30rem] flex-none flex-col justify-end overflow-hidden rounded-sm text-left ring-1 ring-inset ring-transparent transition-shadow duration-200 hover:ring-accent focus:outline-none focus-visible:ring-accent"

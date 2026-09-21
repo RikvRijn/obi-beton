@@ -1,5 +1,7 @@
 import Link from "next/link";
 
+const INSTAGRAM_URL = "https://www.instagram.com/obibeton.nl/";
+
 const MORE_LINKS = [
   { label: "Over ons", href: "/over-ons" },
   { label: "Afwerking & kleuren", href: "/afwerking-en-kleuren" },
@@ -38,7 +40,20 @@ export function Footer() {
           <a href="mailto:info@obibeton.nl" className="block hover:text-on-dark">
             info@obibeton.nl
           </a>
-          <p className="mt-2 text-on-dark-muted">Ma t/m vr: 08:30 – 17:00</p>
+          <p className="mt-2 text-on-dark-muted">Ma t/m vr: 08:30 tot 17:00</p>
+          <a
+            href={INSTAGRAM_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-4 inline-flex items-center gap-2 hover:text-on-dark"
+          >
+            <svg viewBox="0 0 24 24" fill="none" className="h-4 w-4" aria-hidden>
+              <rect x="2.5" y="2.5" width="19" height="19" rx="5" stroke="currentColor" strokeWidth="1.6" />
+              <circle cx="12" cy="12" r="4.2" stroke="currentColor" strokeWidth="1.6" />
+              <circle cx="17.3" cy="6.7" r="1.1" fill="currentColor" />
+            </svg>
+            Instagram
+          </a>
         </div>
 
         <div className="text-sm text-on-dark-secondary">

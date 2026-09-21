@@ -66,14 +66,14 @@ export function HeroSection() {
 
         <div className="relative mx-auto grid w-full max-w-7xl items-center gap-16 lg:grid-cols-[1.1fr_0.9fr]">
           <div>
-            <p className="accent-rule font-display text-xs font-semibold uppercase tracking-[0.2em] text-accent">
+            <p className="accent-rule font-display text-lg font-bold uppercase tracking-[0.15em] text-accent-glow">
               Sinds 1960 · Ossendrecht
             </p>
 
             <h1 className="font-display mt-6 max-w-4xl text-6xl font-black uppercase leading-[0.95] text-on-dark sm:text-7xl lg:text-6xl xl:text-7xl">
               Beton dat
               <br />
-              blijft <span className="text-accent">staan.</span>
+              blijft <span className="text-accent-glow">staan.</span>
             </h1>
 
             <p className="mt-8 max-w-xl text-lg text-on-dark-secondary">
@@ -118,7 +118,7 @@ export function HeroSection() {
             </button>
 
             <div>
-              <p className="accent-rule font-display text-xs font-semibold uppercase tracking-[0.2em] text-accent">
+              <p className="accent-rule font-display text-lg font-bold uppercase tracking-[0.15em] text-accent">
                 Uitgelicht project
               </p>
               <h2 className="font-display mt-4 max-w-lg text-4xl font-black uppercase leading-[0.95] text-on-dark sm:text-5xl">

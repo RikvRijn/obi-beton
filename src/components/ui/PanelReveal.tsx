@@ -34,15 +34,15 @@ export function PanelReveal({ children, className = "" }: { children: ReactNode;
             style={{ width: panel.width, opacity: panel.opacity }}
             initial={{ left: "-65%" }}
             animate={inView ? { left: "165%" } : undefined}
-            transition={{ duration: 0.7, delay: i * 0.08, ease: [0.76, 0, 0.24, 1] }}
+            transition={{ duration: 1.1, delay: i * 0.1, ease: [0.4, 0, 0.2, 1] }}
           />
         ))}
       </div>
 
       <motion.div
-        initial={{ opacity: 0, y: 28 }}
+        initial={{ opacity: 0, y: 16 }}
         animate={inView ? { opacity: 1, y: 0 } : undefined}
-        transition={{ duration: 0.6, delay: 0.3, ease: "easeOut" }}
+        transition={{ duration: 0.7, delay: 0.45, ease: "easeOut" }}
       >
         {children}
       </motion.div>

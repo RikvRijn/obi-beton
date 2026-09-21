@@ -6,7 +6,7 @@ const NAV_LINKS = [
   { label: "Referenties", href: "/#referenties" },
   { label: "Producten", href: "/#producten" },
   { label: "Over ons", href: "/over-ons" },
-  { label: "Vacatures", href: "/#vacatures" },
+  { label: "Vacatures", href: "/vacatures" },
 ];
 
 export function Header() {

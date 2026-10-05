@@ -1,7 +1,7 @@
 "use client";
 
 import { motion, useInView } from "framer-motion";
-import { useRef, type ReactNode } from "react";
+import { useRef, useState, type ReactNode } from "react";
 
 const PANELS = [
   { width: "50%", opacity: 1 },
@@ -22,22 +22,31 @@ const PANELS = [
  */
 export function PanelReveal({ children, className = "" }: { children: ReactNode; className?: string }) {
   const ref = useRef<HTMLDivElement>(null);
-  const inView = useInView(ref, { once: true, amount: 0.35 });
+  // Geen `amount` (percentage van de sectie): een lange sectie op mobiel, zoals
+  // 7 productkaarten onder elkaar, past nooit voor 35% in beeld en zou dan
+  // nooit onthullen. Daarom triggeren zodra de bovenkant 20% het scherm in is.
+  const inView = useInView(ref, { once: true, margin: "0px 0px -20% 0px" });
+  // Na de sweep de balken weghalen: door de skew schuift de onderkant van een
+  // balk bij een hoge sectie (mobiel) niet ver genoeg weg en bleef zichtbaar.
+  const [swept, setSwept] = useState(false);
 
   return (
     <div ref={ref} className={`relative ${className}`}>
-      <div className="pointer-events-none absolute inset-0 z-20 overflow-hidden">
-        {PANELS.map((panel, i) => (
-          <motion.div
-            key={panel.width}
-            className="absolute inset-y-0 -skew-x-12 bg-accent"
-            style={{ width: panel.width, opacity: panel.opacity }}
-            initial={{ left: "-65%" }}
-            animate={inView ? { left: "165%" } : undefined}
-            transition={{ duration: 1.1, delay: i * 0.1, ease: [0.4, 0, 0.2, 1] }}
-          />
-        ))}
-      </div>
+      {!swept && (
+        <div className="pointer-events-none absolute inset-0 z-20 overflow-hidden">
+          {PANELS.map((panel, i) => (
+            <motion.div
+              key={panel.width}
+              className="absolute inset-y-0 -skew-x-12 bg-accent"
+              style={{ width: panel.width, opacity: panel.opacity }}
+              initial={{ left: "-65%" }}
+              animate={inView ? { left: "165%" } : undefined}
+              transition={{ duration: 1.1, delay: i * 0.1, ease: [0.4, 0, 0.2, 1] }}
+              onAnimationComplete={i === PANELS.length - 1 ? () => setSwept(true) : undefined}
+            />
+          ))}
+        </div>
+      )}
 
       <motion.div
         initial={{ opacity: 0, y: 16 }}

@@ -21,7 +21,9 @@ export async function generateMetadata({
   if (!job) return {};
   return {
     title: `${job.title} | Vacature OBI`,
-    description: job.intro,
+    // Eerste zin van de intro: houdt de meta description rond 100–170 tekens.
+    description: job.intro.split(/(?<=\.)\s/)[0],
+    alternates: { canonical: `/vacatures/${job.slug}` },
   };
 }
 
@@ -50,7 +52,7 @@ export default async function VacatureDetailPage({
               <p className="accent-rule font-display text-xs font-semibold uppercase tracking-[0.2em] text-accent-dim">
                 {job.location} · {job.type}
               </p>
-              <h2 className="font-display mt-4 text-2xl font-bold uppercase text-ink">Taken en verantwoordelijkheden</h2>
+              <h2 className="font-display mt-4 text-2xl font-bold uppercase text-ink">Taken en verantwoordelijkheden ter voorbeeld</h2>
               <ul className="mt-4 space-y-3">
                 {job.tasks.map((task) => (
                   <li key={task} className="flex items-start gap-3 text-lg text-ink-secondary">

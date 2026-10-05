@@ -10,12 +10,11 @@ import { FramedVideo } from "@/components/ui/FramedVideo";
 import { PanelReveal } from "@/components/ui/PanelReveal";
 import { LightboxModal, useLightbox } from "@/components/ui/Lightbox";
 
-const COMPANY_FACTS = "Sinds 1960 · 80+ medewerkers · 4 productgroepen";
+const COMPANY_FACTS = "Sinds 1960 · 80+ medewerkers";
 
 const PROJECT_FACTS = [
   { value: 19, suffix: "", label: "Verdiepingen" },
   { value: 157, suffix: "", label: "Startersappartementen" },
-  { value: 800, suffix: "m²", label: "Commerciële ruimte" },
 ];
 
 function FactTile({ value, suffix, label }: { value: number; suffix: string; label: string }) {
@@ -77,8 +76,8 @@ export function HeroSection() {
             </h1>
 
             <p className="mt-8 max-w-xl text-lg text-on-dark-secondary">
-              OBI ontwikkelt en produceert prefab betonelementen: wanden en vloeren,
-              gevelpanelen, balkons en trappen. Vakmanschap in iedere laag,
+              OBI ontwikkelt en produceert prefab betonelementen: balkons, galerijen,
+              gevelelementen, trappen en constructieve elementen. Vakmanschap in iedere laag,
               van de tekentafel tot de bouwplaats.
             </p>
 
@@ -128,8 +127,7 @@ export function HeroSection() {
               <p className="mt-6 max-w-lg text-lg text-on-dark-secondary">
                 Een iconisch gebouw in het stadshart van Almere, een inspirerende en
                 energieke plek voor jonge pioniers. De uitkragende balkons en rode
-                architectonische elementen zijn met de grootste zorg gemaakt door onze
-                zusteronderneming Eurobeton in België.
+                architectonische elementen zijn met de grootste zorg gemaakt door OBI.
               </p>
 
               <div className="mt-8 flex flex-wrap gap-8">
@@ -143,8 +141,7 @@ export function HeroSection() {
               type="button"
               onClick={() =>
                 open({
-                  video: "/project-highnote-almere.mp4",
-                  skipIntroSeconds: 20,
+                  video: "/project-highnote.mp4",
                   title: "HIGHnote",
                   subtitle: "Almere",
                 })
@@ -152,9 +149,8 @@ export function HeroSection() {
               className="cursor-pointer text-left"
             >
               <FramedVideo
-                src="/project-highnote-almere.mp4"
+                src="/project-highnote.mp4"
                 aspectClassName="aspect-video"
-                skipIntroSeconds={20}
                 className="ring-2 ring-transparent transition-shadow hover:ring-accent"
               />
             </button>

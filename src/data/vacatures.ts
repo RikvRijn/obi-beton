@@ -96,4 +96,20 @@ export const VACATURES: Vacature[] = [
       "Controleert of mallen conform tekening worden of zijn vervaardigd.",
     ],
   },
+  {
+    slug: "timmerman",
+    title: "Timmerman",
+    location: "Ossendrecht",
+    type: "Fulltime",
+    intro:
+      "Als timmerman bouw en herstel jij de mallen waarin onze betonelementen worden gestort. Je werkt volgens tekening, zet de mal maatvast op en past hem aan wanneer een element daarom vraagt. Je stemt je werk af met de voorman timmerwerken en met de medewerkers in de hal die met jouw mallen verder moeten.",
+    tasks: [
+      "Bouwt mallen op volgens de productietekening.",
+      "Past bestaande mallen aan voor afwijkende elementen en sparingen.",
+      "Herstelt beschadigde mallen zodat deze weer inzetbaar zijn.",
+      "Controleert de maatvoering van de mal voordat deze wordt vrijgegeven.",
+      "Meldt slijtage en terugkerende gebreken bij de voorman timmerwerken.",
+      "Houdt de werkplaats en het gereedschap in goede staat.",
+    ],
+  },
 ];

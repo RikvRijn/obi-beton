@@ -47,3 +47,6 @@ tailwindcss-*.log
 
 # client documents
 /SEO rapport/
+
+# ruwe klantbestanden na review
+/Na review/

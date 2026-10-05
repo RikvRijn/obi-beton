@@ -5,11 +5,13 @@ import { PageIntro } from "@/components/layout/PageIntro";
 
 export const metadata: Metadata = {
   title: "Offerte aanvragen | OBI",
-  description: "Wat OBI nodig heeft om snel een correcte offerte op te maken voor prefab betonelementen.",
+  description:
+    "Offerte aanvragen voor prefab betonelementen bij OBI in Ossendrecht. Lees welke gegevens wij nodig hebben om snel een correcte offerte op te maken.",
+  alternates: { canonical: "/offerte" },
 };
 
 const CHECKLIST = [
-  "Tekeningen, uitrekstaten, bestek en details van het project",
+  "3D-model (.ifc), tekeningen, uittrekstaten, bestek of technische omschrijving en details van het project",
   "De datum van indiening offerte",
   "Een zo juist mogelijke beschrijving van het uitzicht van de prefabelementen",
   "De verankeringsmiddelen die moeten gebruikt worden",

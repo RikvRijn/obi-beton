@@ -25,7 +25,7 @@ export function PageIntro({
         <p className="accent-rule mt-8 font-display text-lg font-bold uppercase tracking-[0.15em] text-accent-glow">
           {eyebrow}
         </p>
-        <h1 className="font-display mt-4 max-w-3xl text-5xl font-black uppercase leading-[0.95] text-on-dark sm:text-6xl">
+        <h1 className="font-display mt-4 max-w-3xl text-[2rem] font-black uppercase leading-[0.95] text-on-dark sm:text-5xl md:text-6xl">
           {title} {accent && <span className="text-accent-glow">{accent}</span>}
         </h1>
         {intro && <div className="mt-6 max-w-2xl text-lg text-on-dark-secondary">{intro}</div>}

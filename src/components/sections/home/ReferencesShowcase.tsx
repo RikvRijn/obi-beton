@@ -25,6 +25,16 @@ const REFERENCES = [
     location: "Amsterdam",
     image: "/referentie-amstelkwartier-amsterdam-2.png",
   },
+  {
+    name: "Lomanlaan",
+    location: "Utrecht",
+    image: "/referentie-lomanlaan-utrecht-1.jpg",
+  },
+  {
+    name: "Lomanlaan",
+    location: "Utrecht",
+    image: "/referentie-lomanlaan-utrecht-2.jpg",
+  },
 ];
 
 export function ReferencesShowcase() {

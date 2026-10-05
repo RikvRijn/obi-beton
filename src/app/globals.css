@@ -14,10 +14,10 @@
   --ink-muted:         #656278;
 
   /* Merkaccent: OBI-rood */
-  --accent:            #D81E05;
-  --accent-dim:        #AD1804;
-  --accent-glow:       #F03A1C;
-  --accent-soft:       #FBE4DF;
+  --accent:            #D2102A;
+  --accent-dim:        #AC1821;
+  --accent-glow:       #E8283F;
+  --accent-soft:       #FBE3E6;
 
   /* Donkere sectie: lichter beton-grijs i.p.v. bijna-zwart */
   --dark:              #34333A;
@@ -109,4 +109,4 @@ body {
 ::-webkit-scrollbar-thumb { background: var(--border-strong); border-radius: 99px; }
 ::-webkit-scrollbar-thumb:hover { background: var(--accent); }
 
-::selection { background: rgba(216, 30, 5, 0.22); color: var(--ink); }
+::selection { background: rgba(210, 16, 42, 0.22); color: var(--ink); }

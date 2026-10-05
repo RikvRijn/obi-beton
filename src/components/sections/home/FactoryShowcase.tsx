@@ -34,17 +34,17 @@ export function FactoryShowcase() {
   return (
     <section className="bg-dark-maroon px-6 py-16 sm:py-20">
       <PanelReveal className="mx-auto max-w-7xl">
-        <div className="grid items-start gap-12 lg:grid-cols-[1.1fr_0.9fr]">
+        <div className="grid items-center gap-12 lg:grid-cols-[1fr_1fr]">
           <div>
             <p className="accent-rule font-display text-lg font-bold uppercase tracking-[0.15em] text-accent">
               Beton Wonderland
             </p>
             <h2 className="font-display mt-4 max-w-xl text-4xl font-black uppercase leading-tight text-on-dark sm:text-5xl">
-              Een kijkje op ons terrein
+              Een kijkje in onze fabriek
             </h2>
             <p className="mt-6 max-w-lg text-lg text-on-dark-secondary">
-              Een dronevideo van ons productieterrein in Ossendrecht: rijen prefab
-              betonelementen, klaar om naar de bouwplaats te gaan.
+              Van tekenkantoor en mallenbouw tot storten en opslag: zo ontstaan
+              onze prefab betonelementen in Ossendrecht.
             </p>
 
             <div className="mt-10 grid gap-4 sm:grid-cols-2">
@@ -52,7 +52,7 @@ export function FactoryShowcase() {
                 <Link
                   key={link.href}
                   href={link.href}
-                  className="group flex flex-col justify-between gap-6 border-l-4 border-accent bg-white/5 p-6 transition-colors duration-200 hover:bg-white/10 focus:outline-none focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+                  className="group flex flex-col justify-between gap-6 border-l-4 border-accent bg-white/5 p-6 transition-colors duration-200 hover:bg-white/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
                 >
                   <div>
                     <h3 className="font-display text-lg font-bold text-on-dark transition-colors group-hover:text-accent">
@@ -72,9 +72,9 @@ export function FactoryShowcase() {
           </div>
 
           <FramedVideo
-            src="/beton-wonderland.mp4"
-            aspectClassName="aspect-[9/16]"
-            className="mx-auto w-full max-w-md lg:mx-0 lg:ml-auto"
+            src="/beton-wonderland-productie.mp4"
+            aspectClassName="aspect-video"
+            className="w-full"
           />
         </div>
       </PanelReveal>

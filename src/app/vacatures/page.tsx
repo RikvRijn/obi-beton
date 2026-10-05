@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "Vacatures | OBI",
   description:
     "OBI zoekt mensen die graag werken met beton, techniek en hun handen. Bekijk onze openstaande functies in Ossendrecht.",
+  alternates: { canonical: "/vacatures" },
 };
 
 export default function VacaturesPage() {
@@ -29,7 +30,7 @@ export default function VacaturesPage() {
               <Link
                 key={job.slug}
                 href={`/vacatures/${job.slug}`}
-                className="group flex items-center justify-between gap-6 py-7 transition-colors duration-200 hover:bg-surface focus:outline-none focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+                className="group flex items-center justify-between gap-6 py-7 transition-colors duration-200 hover:bg-surface focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
               >
                 <div>
                   <p className="font-display text-xs font-semibold uppercase tracking-[0.2em] text-accent-dim">

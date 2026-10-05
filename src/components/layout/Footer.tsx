@@ -1,6 +1,7 @@
 import Link from "next/link";
 
 const INSTAGRAM_URL = "https://www.instagram.com/obibeton.nl/";
+const LINKEDIN_URL = "https://www.linkedin.com/company/ossendrechtse-betonindustrie-b.v./";
 
 const MORE_LINKS = [
   { label: "Over ons", href: "/over-ons" },
@@ -35,7 +36,7 @@ export function Footer() {
             Contact
           </p>
           <a href="tel:+31164673855" className="block hover:text-on-dark">
-            +31 (0)164 673 855
+            0164 67 38 55
           </a>
           <a href="mailto:info@obibeton.nl" className="block hover:text-on-dark">
             info@obibeton.nl
@@ -53,6 +54,17 @@ export function Footer() {
               <circle cx="17.3" cy="6.7" r="1.1" fill="currentColor" />
             </svg>
             Instagram
+          </a>
+          <a
+            href={LINKEDIN_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-2 flex w-fit items-center gap-2 hover:text-on-dark"
+          >
+            <svg viewBox="0 0 24 24" fill="currentColor" className="h-4 w-4" aria-hidden>
+              <path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9.75h4v11H3v-11Zm6.5 0h3.83v1.5h.05c.53-1 1.84-2.06 3.79-2.06 4.05 0 4.83 2.67 4.83 6.13v5.43h-4v-4.81c0-1.15-.02-2.63-1.6-2.63-1.6 0-1.85 1.25-1.85 2.55v4.89h-4v-11Z" />
+            </svg>
+            LinkedIn
           </a>
         </div>
 
@@ -72,9 +84,12 @@ export function Footer() {
         </div>
       </div>
 
-      <p className="mx-auto mt-12 max-w-7xl text-xs text-on-dark-muted">
-        © {new Date().getFullYear()} OBI, Ossendrechtse Beton Industrie. Alle rechten voorbehouden.
-      </p>
+      <div className="mx-auto mt-12 flex max-w-7xl flex-col gap-2 text-xs text-on-dark-muted sm:flex-row sm:items-center sm:justify-between">
+        <p>© {new Date().getFullYear()} OBI, Ossendrechtse Beton Industrie. Alle rechten voorbehouden. · KvK 20049349</p>
+        <Link href="/privacy" className="underline-offset-2 hover:text-on-dark hover:underline">
+          Privacyverklaring
+        </Link>
+      </div>
     </footer>
   );
 }

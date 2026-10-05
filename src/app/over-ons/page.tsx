@@ -3,17 +3,42 @@ import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { PageIntro } from "@/components/layout/PageIntro";
 import { CtaBanner } from "@/components/ui/CtaBanner";
+import { Button } from "@/components/ui/Button";
+import { MapEmbed } from "@/components/ui/MapEmbed";
 
 export const metadata: Metadata = {
   title: "Over ons | OBI",
   description:
-    "OBI, Ossendrechtse Beton Industrie: sinds 1960 gevestigd in Ossendrecht, gespecialiseerd in prefab beton.",
+    "OBI, Ossendrechtse Beton Industrie: sinds 1960 gevestigd in Ossendrecht en gespecialiseerd in prefab betonelementen zoals balkons, galerijen en trappen.",
+  alternates: { canonical: "/over-ons" },
 };
 
 const FACTS = [
   { value: "1960", label: "Opgericht" },
   { value: "80+", label: "Medewerkers" },
-  { value: "4", label: "Productgroepen" },
+];
+
+const SOCIALS = [
+  {
+    label: "Instagram",
+    href: "https://www.instagram.com/obibeton.nl",
+    icon: (
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="h-4 w-4" aria-hidden>
+        <rect x="3" y="3" width="18" height="18" rx="5" />
+        <circle cx="12" cy="12" r="4" />
+        <circle cx="17.5" cy="6.5" r="0.75" fill="currentColor" stroke="none" />
+      </svg>
+    ),
+  },
+  {
+    label: "LinkedIn",
+    href: "https://www.linkedin.com/company/ossendrechtse-betonindustrie-b.v./",
+    icon: (
+      <svg viewBox="0 0 24 24" fill="currentColor" className="h-4 w-4" aria-hidden>
+        <path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9.75h4v11H3v-11Zm6.5 0h3.83v1.5h.05c.53-1 1.84-2.06 3.79-2.06 4.05 0 4.83 2.67 4.83 6.13v5.43h-4v-4.81c0-1.15-.02-2.63-1.6-2.63-1.6 0-1.85 1.25-1.85 2.55v4.89h-4v-11Z" />
+      </svg>
+    ),
+  },
 ];
 
 export default function OverOnsPage() {
@@ -42,17 +67,40 @@ export default function OverOnsPage() {
               <p>
                 OBI is meer dan een leverancier. Wij denken mee vanaf het eerste bezoek,
                 aan de tekentafel, adviseren over maakbaarheid en leveren op het moment
-                dat het voor jou in de planning past.
+                dat het voor u in de planning past.
               </p>
             </div>
 
-            <div className="grid h-fit grid-cols-3 gap-px overflow-hidden rounded-sm bg-border lg:grid-cols-1">
-              {FACTS.map((fact) => (
-                <div key={fact.label} className="bg-surface p-6 text-center lg:text-left">
-                  <span className="font-display block text-3xl font-black text-ink">{fact.value}</span>
-                  <span className="text-xs uppercase tracking-[0.15em] text-ink-muted">{fact.label}</span>
+            <div className="h-fit space-y-8">
+              <div className="grid grid-cols-2 gap-px overflow-hidden rounded-sm bg-border lg:grid-cols-1">
+                {FACTS.map((fact) => (
+                  <div key={fact.label} className="bg-surface p-6 text-center lg:text-left">
+                    <span className="font-display block text-3xl font-black text-ink">{fact.value}</span>
+                    <span className="text-xs uppercase tracking-[0.15em] text-ink-muted">{fact.label}</span>
+                  </div>
+                ))}
+              </div>
+
+              <div className="rounded-sm border border-border bg-surface p-6">
+                <p className="font-display text-xs font-semibold uppercase tracking-[0.2em] text-accent-dim">
+                  Volg OBI
+                </p>
+                <h2 className="font-display mt-3 text-xl font-black uppercase leading-tight text-ink">
+                  Meer van ons werk zien?
+                </h2>
+                <p className="mt-3 text-ink-secondary">
+                  Neem een kijkje op onze Instagram voor projecten en een blik in de fabriek, of volg ons op LinkedIn voor het laatste nieuws.
+                </p>
+                <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+                  {SOCIALS.map((social) => (
+                    <Button key={social.label} href={social.href} target="_blank" className="justify-center px-5">
+                      {social.icon}
+                      {social.label}
+                      <span className="sr-only"> (opent in een nieuw tabblad)</span>
+                    </Button>
+                  ))}
                 </div>
-              ))}
+              </div>
             </div>
           </div>
         </section>
@@ -78,7 +126,7 @@ export default function OverOnsPage() {
                   Contact
                 </p>
                 <a href="tel:+31164673855" className="mt-3 block text-lg text-ink hover:text-accent">
-                  +31 (0)164 673 855
+                  0164 67 38 55
                 </a>
                 <a href="mailto:info@obibeton.nl" className="block text-lg text-ink hover:text-accent">
                   info@obibeton.nl
@@ -86,15 +134,11 @@ export default function OverOnsPage() {
                 <p className="mt-3 text-sm text-ink-muted">Ma t/m vr: 08:30 tot 17:00</p>
               </div>
 
-              <div className="h-80 overflow-hidden rounded-sm border border-border lg:h-auto">
-                <iframe
-                  src="https://www.google.com/maps?q=Molenbosstraat+7,+4641+SH+Ossendrecht&output=embed"
-                  title="OBI op de kaart, Molenbosstraat 7, Ossendrecht"
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                  className="h-full w-full border-0"
-                />
-              </div>
+              <MapEmbed
+                src="https://www.google.com/maps?q=Molenbosstraat+7,+4641+SH+Ossendrecht&output=embed"
+                title="OBI op de kaart, Molenbosstraat 7, Ossendrecht"
+                externalHref="https://www.google.com/maps/search/?api=1&query=Molenbosstraat+7+4641+SH+Ossendrecht"
+              />
             </div>
           </div>
         </section>

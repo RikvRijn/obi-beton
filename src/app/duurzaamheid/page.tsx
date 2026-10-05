@@ -7,7 +7,8 @@ import { CtaBanner } from "@/components/ui/CtaBanner";
 export const metadata: Metadata = {
   title: "Duurzaamheid | OBI",
   description:
-    "Hoe OBI de CO₂-uitstoot van haar prefab beton stap voor stap verlaagt, van CEM-I naar CEM-III/A.",
+    "Duurzaamheid bij OBI: hoe wij de CO₂-uitstoot van ons prefab beton stap voor stap verlagen, van CEM-I naar CEM-III/A cement.",
+  alternates: { canonical: "/duurzaamheid" },
 };
 
 const CO2_MAX = 355;
@@ -61,6 +62,10 @@ export default function DuurzaamheidPage() {
                 energiebesparende opties binnen het productieproces en opties
                 om onze grondstoffen warm te krijgen en te houden, allemaal om
                 ervoor te zorgen dat onze footprint zo klein mogelijk is.
+              </p>
+              <p className="mt-3">
+                Voor 2027–2028 verwachten wij onze CO₂-uitstoot verder terug te
+                brengen naar circa 140&nbsp;kg CO₂ per m³ beton.
               </p>
             </div>
           </div>

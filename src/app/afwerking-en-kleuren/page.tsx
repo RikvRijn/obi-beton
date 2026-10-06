@@ -43,7 +43,7 @@ const FINISHES: { name: string; photos: GalleryPhoto[]; description: string }[] 
   },
   {
     name: "Glad onbewerkt beton",
-    photos: [{ src: "/afwerking-glad-onbewerkt-beton.jpg", alt: "Voorbeeld van glad onbewerkt beton", width: 1400, height: 933 }],
+    photos: [{ src: "/afwerking-glad-beton.jpg", alt: "Voorbeeld van glad onbewerkt beton", width: 1600, height: 1200 }],
     description:
       "Bij glad onbewerkt beton wordt het uiterlijk bepaald door de eventueel gekleurde cementsteen en de fijne zandkorrels. Glad egaal gekleurd beton is het meest moeilijk te maken. Het vereist een grote nauwkeurigheid bij dosering en fabricage, en een perfecte mal. Kleine onvolkomenheden in het oppervlak zijn inherent aan dit product: kleine gelijkmatig verspreide luchtbellen en kleurverschillen zichtbaar als wolken op het oppervlak.",
   },

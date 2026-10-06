@@ -19,7 +19,7 @@ export function AboutTeaser() {
 
             <div className="mt-6 max-w-2xl space-y-4 text-lg text-ink-secondary">
               <p>
-                Ossendrechtse Beton Industrie (OBI) is gevestigd aan de Molenbosstraat in
+                Ossendrechtse Betonindustrie (OBI) is gevestigd aan de Molenbosstraat in
                 Ossendrecht en groeide uit tot een gespecialiseerde fabrikant in prefab
                 beton, met een duidelijke identiteit: sterke producten, korte lijnen en
                 mensen die trots zijn op het bedrijf. Dit alles doet OBI al sinds 1960.

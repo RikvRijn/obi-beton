@@ -31,7 +31,7 @@ export function Header() {
         <Link href="/" className="flex items-center">
           <Image
             src="/logo-obi.png"
-            alt="OBI, Ossendrechtse Beton Industrie"
+            alt="OBI, Ossendrechtse Betonindustrie"
             width={319}
             height={75}
             priority

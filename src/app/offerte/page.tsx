@@ -13,7 +13,6 @@ export const metadata: Metadata = {
 const CHECKLIST = [
   "3D-model (.ifc), tekeningen, uittrekstaten, bestek of technische omschrijving en details van het project",
   "De datum van indiening offerte",
-  "Een zo juist mogelijke beschrijving van het uitzicht van de prefabelementen",
   "De verankeringsmiddelen die moeten gebruikt worden",
   "De plaats en data van levering",
 ];

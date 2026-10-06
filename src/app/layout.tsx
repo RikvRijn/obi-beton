@@ -18,7 +18,7 @@ const SITE_URL = "https://www.obibeton.nl";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
-  title: "OBI · Ossendrechtse Beton Industrie | Beton dat blijft staan",
+  title: "OBI · Ossendrechtse Betonindustrie | Beton dat blijft staan",
   description:
     "OBI vervaardigt prefab betonelementen: balkons, galerijen, gevelelementen, trappen en constructieve elementen. Sinds 1960 vanuit Ossendrecht.",
   // og:title/og:description en twitter:* worden per pagina automatisch
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "nl_NL",
-    siteName: "OBI · Ossendrechtse Beton Industrie",
+    siteName: "OBI · Ossendrechtse Betonindustrie",
     images: [
       {
         url: "/og-obi.jpg",
@@ -45,7 +45,7 @@ const organizationJsonLd = {
   "@context": "https://schema.org",
   "@type": ["LocalBusiness", "Organization"],
   "@id": `${SITE_URL}/#organization`,
-  name: "Ossendrechtse Beton Industrie",
+  name: "Ossendrechtse Betonindustrie",
   alternateName: "OBI",
   url: SITE_URL,
   logo: `${SITE_URL}/logo-obi.png`,

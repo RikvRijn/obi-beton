@@ -13,7 +13,7 @@ import { PageIntro } from "@/components/layout/PageIntro";
 export const metadata: Metadata = {
   title: "Privacyverklaring | OBI",
   description:
-    "Lees hoe Ossendrechtse Beton Industrie (OBI) omgaat met uw persoonsgegevens wanneer u onze website bezoekt, contact met ons opneemt of solliciteert.",
+    "Lees hoe Ossendrechtse Betonindustrie (OBI) omgaat met uw persoonsgegevens wanneer u onze website bezoekt, contact met ons opneemt of solliciteert.",
   alternates: { canonical: "/privacy" },
   robots: { index: true, follow: true },
 };
@@ -58,12 +58,12 @@ export default function PrivacyPage() {
           <article className="mx-auto max-w-3xl">
             <Section title="Wie zijn wij?">
               <p>
-                Ossendrechtse Beton Industrie B.V. (hierna: &ldquo;OBI&rdquo;, &ldquo;wij&rdquo;) is
+                Ossendrechtse Betonindustrie B.V. (hierna: &ldquo;OBI&rdquo;, &ldquo;wij&rdquo;) is
                 verantwoordelijk voor de verwerking van persoonsgegevens zoals beschreven in deze
                 privacyverklaring.
               </p>
               <p>
-                Ossendrechtse Beton Industrie B.V.
+                Ossendrechtse Betonindustrie B.V.
                 <br />
                 Molenbosstraat 7
                 <br />

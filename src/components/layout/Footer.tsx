@@ -19,7 +19,7 @@ export function Footer() {
         <div>
           <p className="font-display text-xl font-bold">OBI</p>
           <p className="mt-2 max-w-xs text-sm text-on-dark-secondary">
-            Ossendrechtse Beton Industrie, prefab betonelementen sinds 1960.
+            Ossendrechtse Betonindustrie, prefab betonelementen sinds 1960.
           </p>
         </div>
 
@@ -85,7 +85,7 @@ export function Footer() {
       </div>
 
       <div className="mx-auto mt-12 flex max-w-7xl flex-col gap-2 text-xs text-on-dark-muted sm:flex-row sm:items-center sm:justify-between">
-        <p>© {new Date().getFullYear()} OBI, Ossendrechtse Beton Industrie. Alle rechten voorbehouden. · KvK 20049349</p>
+        <p>© {new Date().getFullYear()} OBI, Ossendrechtse Betonindustrie. Alle rechten voorbehouden. · KvK 20049349</p>
         <Link href="/privacy" className="underline-offset-2 hover:text-on-dark hover:underline">
           Privacyverklaring
         </Link>

@@ -14,7 +14,7 @@ export type GalleryPhoto = {
 };
 
 /** Klikstatus voor een fotogalerij: welke foto (index) vergroot getoond wordt. */
-function useGallery(count: number) {
+export function useGallery(count: number) {
   const [index, setIndex] = useState<number | null>(null);
   const prev = useCallback(() => setIndex((i) => (i === null ? i : (i - 1 + count) % count)), [count]);
   const next = useCallback(() => setIndex((i) => (i === null ? i : (i + 1) % count)), [count]);
@@ -30,7 +30,7 @@ function ChevronIcon({ direction }: { direction: "left" | "right" }) {
   );
 }
 
-function PhotosIcon() {
+export function PhotosIcon() {
   return (
     <svg viewBox="0 0 24 24" aria-hidden="true" className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth={2}>
       <rect x="3" y="5" width="14" height="14" rx="1" />
@@ -40,7 +40,7 @@ function PhotosIcon() {
 }
 
 /** Vergrote weergave met bladeren: pijltoetsen, Escape, klik op achtergrond om te sluiten. */
-function GalleryModal({
+export function GalleryModal({
   title,
   photos,
   index,

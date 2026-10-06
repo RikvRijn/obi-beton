@@ -3,7 +3,7 @@ import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { PageIntro } from "@/components/layout/PageIntro";
 import { CtaBanner } from "@/components/ui/CtaBanner";
-import { FinishMedia, PhotoGrid, type GalleryPhoto } from "@/components/sections/afwerking/FinishGallery";
+import { FinishMedia, type GalleryPhoto } from "@/components/sections/afwerking/FinishGallery";
 
 export const metadata: Metadata = {
   title: "Afwerking & kleuren | OBI",
@@ -46,16 +46,6 @@ const FINISHES: { name: string; photos: GalleryPhoto[]; description: string }[] 
     photos: [{ src: "/afwerking-glad-onbewerkt-beton.jpg", alt: "Voorbeeld van glad onbewerkt beton", width: 1400, height: 933 }],
     description:
       "Bij glad onbewerkt beton wordt het uiterlijk bepaald door de eventueel gekleurde cementsteen en de fijne zandkorrels. Glad egaal gekleurd beton is het meest moeilijk te maken. Het vereist een grote nauwkeurigheid bij dosering en fabricage, en een perfecte mal. Kleine onvolkomenheden in het oppervlak zijn inherent aan dit product: kleine gelijkmatig verspreide luchtbellen en kleurverschillen zichtbaar als wolken op het oppervlak.",
-  },
-];
-
-const MASONRY_PHOTOS: GalleryPhoto[] = [
-  { src: "/afwerking-steenstrips.jpg", alt: "Close-up van ingestorte steenstrips in een betonelement", label: "Steenstrips", ...PORTRAIT },
-  {
-    src: "/afwerking-borstwering-steenstrips.jpg",
-    alt: "Prefab borstwering met ingestorte steenstrips",
-    label: "Borstwering met steenstrips",
-    ...PORTRAIT,
   },
 ];
 
@@ -108,9 +98,6 @@ export default function AfwerkingPage() {
                 procedé kan ook gebruikt worden voor ingewikkelde elementen, die
                 in traditioneel metselwerk niet te maken zijn.
               </p>
-              <div className="mt-6">
-                <PhotoGrid title="Metselwerkelementen" photos={MASONRY_PHOTOS} />
-              </div>
             </div>
 
             <div className="border-l-4 border-accent bg-page p-6">

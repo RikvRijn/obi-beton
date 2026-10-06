@@ -9,7 +9,7 @@ import { MapEmbed } from "@/components/ui/MapEmbed";
 export const metadata: Metadata = {
   title: "Over ons | OBI",
   description:
-    "OBI, Ossendrechtse Beton Industrie: sinds 1960 gevestigd in Ossendrecht en gespecialiseerd in prefab betonelementen zoals balkons, galerijen en trappen.",
+    "OBI, Ossendrechtse Betonindustrie: sinds 1960 gevestigd in Ossendrecht en gespecialiseerd in prefab betonelementen zoals balkons, galerijen en trappen.",
   alternates: { canonical: "/over-ons" },
 };
 
@@ -52,7 +52,7 @@ export default function OverOnsPage() {
           <div className="mx-auto grid max-w-6xl gap-16 lg:grid-cols-[1.2fr_0.8fr]">
             <div className="space-y-6 text-lg text-ink-secondary">
               <p>
-                Ossendrechtse Beton Industrie (OBI) is gevestigd aan de Molenbosstraat in
+                Ossendrechtse Betonindustrie (OBI) is gevestigd aan de Molenbosstraat in
                 Ossendrecht, uitgegroeid tot een gespecialiseerde fabrikant in prefab
                 beton met een duidelijke identiteit: sterke producten, korte lijnen en
                 mensen die trots zijn op het bedrijf. En dit alles doet OBI al sinds

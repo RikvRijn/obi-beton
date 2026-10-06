@@ -10,7 +10,6 @@ import { FramedVideo } from "@/components/ui/FramedVideo";
 import { PanelReveal } from "@/components/ui/PanelReveal";
 import { LightboxModal, useLightbox } from "@/components/ui/Lightbox";
 
-const COMPANY_FACTS = "Sinds 1960 · 80+ medewerkers";
 
 const PROJECT_FACTS = [
   { value: 19, suffix: "", label: "Verdiepingen" },
@@ -97,11 +96,7 @@ export function HeroSection() {
 
       <div className="relative bg-dark-maroon px-6 py-16 sm:py-20">
         <PanelReveal className="mx-auto max-w-[100rem]">
-          <p className="font-display text-xs font-semibold uppercase tracking-[0.2em] text-on-dark-secondary">
-            {COMPANY_FACTS}
-          </p>
-
-          <div className="mt-10 grid items-center gap-8 lg:grid-cols-[0.85fr_0.9fr_1.15fr]">
+          <div className="grid items-center gap-8 lg:grid-cols-[0.85fr_0.9fr_1.15fr]">
             <button
               type="button"
               onClick={() => open({ image: "/highnote-almere-foto.jpg", title: "HIGHnote", subtitle: "Almere" })}

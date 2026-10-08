@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { MadeBy } from "./MadeBy";
 
 const INSTAGRAM_URL = "https://www.instagram.com/obibeton.nl/";
 const LINKEDIN_URL = "https://www.linkedin.com/company/ossendrechtse-betonindustrie-b.v./";
@@ -86,6 +87,7 @@ export function Footer() {
 
       <div className="mx-auto mt-12 flex max-w-7xl flex-col gap-2 text-xs text-on-dark-muted sm:flex-row sm:items-center sm:justify-between">
         <p>© {new Date().getFullYear()} OBI, Ossendrechtse Betonindustrie. Alle rechten voorbehouden. · KvK 20049349</p>
+        <MadeBy />
         <Link href="/privacy" className="underline-offset-2 hover:text-on-dark hover:underline">
           Privacyverklaring
         </Link>

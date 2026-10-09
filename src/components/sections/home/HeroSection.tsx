@@ -64,7 +64,7 @@ export function HeroSection() {
 
         <div className="relative mx-auto grid w-full max-w-7xl items-center gap-16 lg:grid-cols-[1.1fr_0.9fr]">
           <div>
-            <p className="accent-rule font-display text-lg font-bold uppercase tracking-[0.15em] text-accent-glow">
+            <p className="accent-rule font-display text-xl font-bold uppercase tracking-[0.06em] text-accent-glow sm:tracking-[0.15em]">
               Sinds 1960 · Ossendrecht
             </p>
 
@@ -107,6 +107,7 @@ export function HeroSection() {
                 alt="HIGHnote, Almere"
                 width={1440}
                 height={1080}
+                sizes="(min-width: 1024px) 640px, 100vw"
                 className="aspect-[4/3] w-full object-cover"
               />
             </button>
@@ -141,10 +142,13 @@ export function HeroSection() {
                   subtitle: "Almere",
                 })
               }
+              aria-label="Bekijk de video van project HIGHnote in Almere"
               className="cursor-pointer text-left"
             >
               <FramedVideo
                 src="/project-highnote.mp4"
+                mobileSrc="/project-highnote-mobiel.mp4"
+                poster="/project-highnote-poster.jpg"
                 aspectClassName="aspect-video"
                 className="ring-2 ring-transparent transition-shadow hover:ring-accent"
               />

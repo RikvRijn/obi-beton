@@ -6,7 +6,7 @@ export function MadeBy({ label = "Deze website is gebouwd door" }: { label?: str
   return (
     <a
       href="https://webbouwerij.nl"
-      className="group inline-flex items-center gap-2 text-xs opacity-80 transition-opacity hover:opacity-100"
+      className="group inline-flex items-center gap-2 text-xs"
     >
       <span>{label}</span>
       <svg aria-hidden="true" viewBox="0 0 64 64" width="18" height="18" className="shrink-0">

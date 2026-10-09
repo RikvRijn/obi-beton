@@ -36,10 +36,10 @@ export function Footer() {
           <p className="mb-2 font-display text-xs font-semibold uppercase tracking-wider text-on-dark">
             Contact
           </p>
-          <a href="tel:+31164673855" className="block hover:text-on-dark">
+          <a href="tel:+31164673855" className="block py-1.5 hover:text-on-dark">
             0164 67 38 55
           </a>
-          <a href="mailto:info@obibeton.nl" className="block hover:text-on-dark">
+          <a href="mailto:info@obibeton.nl" className="block py-1.5 hover:text-on-dark">
             info@obibeton.nl
           </a>
           <p className="mt-2 text-on-dark-muted">Ma t/m vr: 08:30 tot 17:00</p>

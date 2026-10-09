@@ -5,7 +5,7 @@ import { PageIntro } from "@/components/layout/PageIntro";
 import { CtaBanner } from "@/components/ui/CtaBanner";
 
 export const metadata: Metadata = {
-  title: "Duurzaamheid | OBI",
+  title: "Duurzaam prefab beton met minder CO₂ | OBI Ossendrecht",
   description:
     "Duurzaamheid bij OBI: hoe wij de CO₂-uitstoot van ons prefab beton stap voor stap verlagen, van CEM-I naar CEM-III/A cement.",
   alternates: { canonical: "/duurzaamheid" },
@@ -82,7 +82,7 @@ export default function DuurzaamheidPage() {
                 className="absolute inset-y-0 border-l-2 border-dashed border-accent"
                 style={{ left: `${(CEILING.value / CO2_MAX) * 100}%` }}
               >
-                <span className="font-display absolute -top-7 -translate-x-1/2 whitespace-nowrap text-xs font-semibold uppercase tracking-wide text-accent-glow">
+                <span className="font-display absolute -top-7 -translate-x-1/2 whitespace-nowrap text-xs font-semibold uppercase tracking-wide text-accent-dim">
                   Plafond {CEILING.value}
                 </span>
               </div>

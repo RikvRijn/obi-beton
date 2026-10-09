@@ -73,6 +73,8 @@ export function FactoryShowcase() {
 
           <FramedVideo
             src="/beton-wonderland-productie.mp4"
+            mobileSrc="/beton-wonderland-productie-mobiel.mp4"
+            poster="/beton-wonderland-productie-poster.jpg"
             aspectClassName="aspect-video"
             className="w-full"
           />

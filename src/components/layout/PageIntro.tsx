@@ -22,7 +22,7 @@ export function PageIntro({
           &larr; Terug naar home
         </Link>
 
-        <p className="accent-rule mt-8 font-display text-lg font-bold uppercase tracking-[0.15em] text-accent-glow">
+        <p className="accent-rule mt-8 font-display text-xl font-bold uppercase tracking-[0.15em] text-accent-glow">
           {eyebrow}
         </p>
         <h1 className="font-display mt-4 max-w-3xl text-[2rem] font-black uppercase leading-[0.95] text-on-dark sm:text-5xl md:text-6xl">

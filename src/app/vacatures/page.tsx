@@ -6,7 +6,7 @@ import { PageIntro } from "@/components/layout/PageIntro";
 import { VACATURES } from "@/data/vacatures";
 
 export const metadata: Metadata = {
-  title: "Vacatures | OBI",
+  title: "Vacatures in Ossendrecht | Werken bij OBI",
   description:
     "OBI zoekt mensen die graag werken met beton, techniek en hun handen. Bekijk onze openstaande functies in Ossendrecht.",
   alternates: { canonical: "/vacatures" },

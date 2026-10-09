@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/Button";
 import { MapEmbed } from "@/components/ui/MapEmbed";
 
 export const metadata: Metadata = {
-  title: "Over ons | OBI",
+  title: "Over OBI | Prefab betonfabriek in Ossendrecht sinds 1960",
   description:
     "OBI, Ossendrechtse Betonindustrie: sinds 1960 gevestigd in Ossendrecht en gespecialiseerd in prefab betonelementen zoals balkons, galerijen en trappen.",
   alternates: { canonical: "/over-ons" },

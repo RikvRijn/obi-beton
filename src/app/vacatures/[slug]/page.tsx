@@ -20,7 +20,7 @@ export async function generateMetadata({
   const job = VACATURES.find((v) => v.slug === slug);
   if (!job) return {};
   return {
-    title: `${job.title} | Vacature OBI`,
+    title: `${job.title} in ${job.location} | Vacature OBI`,
     // Eerste zin van de intro: houdt de meta description rond 100–170 tekens.
     description: job.intro.split(/(?<=\.)\s/)[0],
     alternates: { canonical: `/vacatures/${job.slug}` },
@@ -40,8 +40,43 @@ export default async function VacatureDetailPage({
     `Sollicitatie ${job.title}`
   )}`;
 
+  // JobPosting voor Google for Jobs; de werkgever verwijst naar de
+  // Organization-gegevens uit de layout.
+  const jobPostingJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "JobPosting",
+    title: job.title,
+    description: `<p>${job.intro}</p><ul>${job.tasks.map((task) => `<li>${task}</li>`).join("")}</ul>`,
+    datePosted: job.datePosted,
+    employmentType: job.type === "Fulltime" ? "FULL_TIME" : "PART_TIME",
+    directApply: false,
+    hiringOrganization: {
+      "@type": "Organization",
+      "@id": "https://obibeton.nl/#organization",
+      name: "Ossendrechtse Betonindustrie",
+      sameAs: "https://obibeton.nl",
+      logo: "https://obibeton.nl/logo-obi.png",
+    },
+    jobLocation: {
+      "@type": "Place",
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: "Molenbosstraat 7",
+        postalCode: "4641 SH",
+        addressLocality: job.location,
+        addressCountry: "NL",
+      },
+    },
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(jobPostingJsonLd).replace(/</g, "\\u003c"),
+        }}
+      />
       <Header />
       <main>
         <PageIntro eyebrow="Vacature" title={job.title} intro={job.intro} />

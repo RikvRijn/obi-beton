@@ -3,6 +3,8 @@ export type Vacature = {
   title: string;
   location: string;
   type: string;
+  /** Datum waarop de vacature op de site kwam (JobPosting voor Google for Jobs). */
+  datePosted: string;
   intro: string;
   tasks: string[];
 };
@@ -13,6 +15,7 @@ export const VACATURES: Vacature[] = [
     title: "Productiemedewerker",
     location: "Ossendrecht",
     type: "Fulltime",
+    datePosted: "2026-09-21",
     intro:
       "Als productiemedewerker draag jij zorg voor de dagelijkse productie van onze betonelementen, met oog voor kwaliteit en planning. Je maakt deel uit van een vaste ploeg en werkt nauw samen met collega's binnen de productieafdeling.",
     tasks: [
@@ -28,6 +31,7 @@ export const VACATURES: Vacature[] = [
     title: "Junior of Senior tekenaar",
     location: "Ossendrecht",
     type: "Fulltime",
+    datePosted: "2026-09-21",
     intro:
       "Als tekenaar vertaal je tekeningen van klanten naar concrete 3D-werktekeningen ten behoeve van de productie. Je werkt met Tekla en stemt nauw af met de projectleider en werkvoorbereider.",
     tasks: [
@@ -42,6 +46,7 @@ export const VACATURES: Vacature[] = [
     title: "Bedienaar betoncentrale & storter",
     location: "Ossendrecht",
     type: "Fulltime",
+    datePosted: "2026-09-21",
     intro:
       "Als bedienaar van de betoncentrale zorg jij dat het beton volgens recept wordt geproduceerd en tijdig, in de juiste consistentie, bij de mallen wordt aangeleverd. Met behulp van de heftruck breng je het beton naar de hal en verzorg je het storten conform werkinstructie.",
     tasks: [
@@ -57,6 +62,7 @@ export const VACATURES: Vacature[] = [
     title: "Kraanmedewerker",
     location: "Ossendrecht",
     type: "Fulltime",
+    datePosted: "2026-09-21",
     intro:
       "Als kraanmedewerker verzorg jij het stapelen van gereedgekomen elementen op het tasveld en het beladen van vrachtwagens conform planning. Je werkt nauw samen met de afdeling logistiek en behoudt overzicht over de locatie van de elementen.",
     tasks: [
@@ -72,6 +78,7 @@ export const VACATURES: Vacature[] = [
     title: "Magazijnbeheerder",
     location: "Ossendrecht",
     type: "Fulltime",
+    datePosted: "2026-09-21",
     intro:
       "Als magazijnbeheerder stel jij per mal de benodigde materialen samen en beheer je de voorraad, zodat productiemedewerkers effectief kunnen werken. Je bent het aanspreekpunt waar collega's dagelijks terecht kunnen om hun werkdag te starten.",
     tasks: [
@@ -87,6 +94,7 @@ export const VACATURES: Vacature[] = [
     title: "Voorman timmerwerken",
     location: "Ossendrecht",
     type: "Fulltime",
+    datePosted: "2026-09-21",
     intro:
       "Als voorman timmerwerken ben jij verantwoordelijk voor de mallen die in Ossendrecht worden vervaardigd. Daarnaast bereid je de overige mallen in de fabriek voor, zodat medewerkers bij aanvang van de dag direct aan de slag kunnen. Je onderhoudt nauw contact met de productiemanager en overige betrokkenen binnen de fabriek.",
     tasks: [
@@ -101,6 +109,7 @@ export const VACATURES: Vacature[] = [
     title: "Timmerman",
     location: "Ossendrecht",
     type: "Fulltime",
+    datePosted: "2026-10-05",
     intro:
       "Als timmerman bouw en herstel jij de mallen waarin onze betonelementen worden gestort. Je werkt volgens tekening, zet de mal maatvast op en past hem aan wanneer een element daarom vraagt. Je stemt je werk af met de voorman timmerwerken en met de medewerkers in de hal die met jouw mallen verder moeten.",
     tasks: [

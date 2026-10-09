@@ -6,7 +6,7 @@ import { CtaBanner } from "@/components/ui/CtaBanner";
 import { Button } from "@/components/ui/Button";
 
 export const metadata: Metadata = {
-  title: "Kwaliteit | OBI",
+  title: "KOMO-gecertificeerd prefab beton | OBI Ossendrecht",
   description:
     "Kwaliteit bij OBI: prefab betonelementen gemaakt conform de eisen van het KOMO-certificaat (BRL 2813), vanuit onze fabriek in Ossendrecht.",
   alternates: { canonical: "/kwaliteit" },

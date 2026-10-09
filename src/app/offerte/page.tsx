@@ -4,7 +4,7 @@ import { Footer } from "@/components/layout/Footer";
 import { PageIntro } from "@/components/layout/PageIntro";
 
 export const metadata: Metadata = {
-  title: "Offerte aanvragen | OBI",
+  title: "Offerte prefab betonelementen aanvragen | OBI",
   description:
     "Offerte aanvragen voor prefab betonelementen bij OBI in Ossendrecht. Lees welke gegevens wij nodig hebben om snel een correcte offerte op te maken.",
   alternates: { canonical: "/offerte" },

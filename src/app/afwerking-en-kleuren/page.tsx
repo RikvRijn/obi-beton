@@ -6,7 +6,7 @@ import { CtaBanner } from "@/components/ui/CtaBanner";
 import { FinishMedia, type GalleryPhoto } from "@/components/sections/afwerking/FinishGallery";
 
 export const metadata: Metadata = {
-  title: "Afwerking & kleuren | OBI",
+  title: "Afwerking & kleuren van prefab beton | OBI Ossendrecht",
   description:
     "Afwerkingstechnieken en kleurmogelijkheden voor prefab betonelementen van OBI: uitgewassen, gestraald, geprofileerd en glad onbewerkt beton.",
   alternates: { canonical: "/afwerking-en-kleuren" },

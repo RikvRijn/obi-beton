@@ -16,7 +16,7 @@
   /* Merkaccent: OBI-rood */
   --accent:            #D2102A;
   --accent-dim:        #AC1821;
-  --accent-glow:       #E8283F;
+  --accent-glow:       #EE3D50; /* iets lichter dan #E8283F: haalt 3:1 contrast op --dark */
   --accent-soft:       #FBE3E6;
 
   /* Donkere sectie: lichter beton-grijs i.p.v. bijna-zwart */

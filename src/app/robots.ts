@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://www.obibeton.nl/sitemap.xml",
+    sitemap: "https://obibeton.nl/sitemap.xml",
   };
 }

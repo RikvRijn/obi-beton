@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 import { VACATURES } from "@/data/vacatures";
 
-const SITE_URL = "https://www.obibeton.nl";
+const SITE_URL = "https://obibeton.nl";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const pages: {

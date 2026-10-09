@@ -14,7 +14,7 @@ const inter = Inter({
   weight: ["400", "500", "600"],
 });
 
-const SITE_URL = "https://www.obibeton.nl";
+const SITE_URL = "https://obibeton.nl";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -29,10 +29,10 @@ export const metadata: Metadata = {
     siteName: "OBI · Ossendrechtse Betonindustrie",
     images: [
       {
-        url: "/og-obi.jpg",
+        url: "/og-obi-logo.jpg",
         width: 1200,
         height: 630,
-        alt: "Woontoren HighNote in Almere met prefab betonelementen van OBI",
+        alt: "Logo van OBI · Ossendrechtse Betonindustrie",
       },
     ],
   },
@@ -49,7 +49,7 @@ const organizationJsonLd = {
   alternateName: "OBI",
   url: SITE_URL,
   logo: `${SITE_URL}/logo-obi.png`,
-  image: `${SITE_URL}/og-obi.jpg`,
+  image: `${SITE_URL}/og-obi-logo.jpg`,
   description:
     "Producent van prefab betonelementen: balkons, galerijen, gevelelementen, trappen en constructieve elementen. Sinds 1960 vanuit Ossendrecht.",
   foundingDate: "1960",
